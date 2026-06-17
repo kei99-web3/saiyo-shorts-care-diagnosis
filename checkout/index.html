@@ -1,0 +1,50 @@
+<!doctype html>
+    <html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>決済ページ準備中 | 採用Shorts</title>
+      <style>
+:root{--ink:#11181f;--muted:#5b6872;--line:#d8e2e8;--bg:#f7faf8;--panel:#fff;--accent:#12c7a0;--warn:#ffbd3d}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(90deg,rgba(18,199,160,.08) 1px,transparent 1px),linear-gradient(0deg,rgba(17,24,31,.05) 1px,transparent 1px),var(--bg);background-size:44px 44px;color:var(--ink);font-family:"Yu Gothic","Meiryo",system-ui,sans-serif;line-height:1.75}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:#11181f;color:#fff;padding:54px 0;border-bottom:6px solid var(--accent)}
+header p{color:#dbe6ec}
+h1{font-size:clamp(35px,6vw,68px);line-height:1.08;margin:0 0 18px;letter-spacing:0}
+h2{font-size:30px;line-height:1.25;margin:0 0 12px;letter-spacing:0}
+h3{font-size:23px;line-height:1.3;margin:0 0 8px;letter-spacing:0}
+p{color:var(--muted);margin:0 0 14px}
+section{padding:30px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;box-shadow:0 14px 38px rgba(20,31,27,.07)}
+.btn,button{display:inline-block;border:0;border-radius:8px;padding:15px 20px;font-weight:900;text-decoration:none;margin:8px 10px 0 0;cursor:pointer;font:inherit}
+.primary{background:var(--accent);color:#11181f}.paid{background:var(--warn);color:#11181f}.dark{background:#11181f;color:#fff}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.flow div{background:#11181f;color:#fff;border-radius:8px;padding:14px;text-align:center;font-weight:900}
+.badge{display:inline-block;background:#eef6f2;border:1px solid #cfe2dc;border-radius:999px;padding:5px 12px;font-weight:900;color:#16433a;margin:0 6px 8px 0}
+input,textarea,select{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;font:inherit;background:#fff;margin:6px 0 14px}
+label{font-weight:900;color:#24313b}
+.sample{border-left:6px solid var(--accent);padding-left:14px}
+.small{font-size:13px;color:#7a8790}
+video{width:100%;aspect-ratio:9/16;background:#11181f;border-radius:8px}
+a{color:#245cbd}
+@media(max-width:820px){.grid,.two,.flow{grid-template-columns:1fr}header{padding:44px 0}}
+</style>
+    </head>
+    <body>
+      <header><div class="wrap">
+        <p><strong>決済ページ下書き</strong></p>
+        <h1>決済リンク接続用の下書きページです。</h1>
+        <p>このページではまだ課金されません。無料診断後、制作範囲と金額が確定してから決済導線を有効化します。</p>
+      </div></header>
+      <main class="wrap">
+        <section class="card">
+          <h2>接続予定</h2>
+          <p>カード決済リンク、銀行振込案内、請求書払いのいずれかを、価格確定後に接続します。</p>
+          <p><a class="btn primary" href="../#diagnosis-form">先に求人票URLで無料診断する</a></p>
+        </section>
+      </main>
+    </body>
+    </html>
