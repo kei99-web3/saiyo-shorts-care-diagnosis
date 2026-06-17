@@ -1,133 +1,233 @@
 <!doctype html>
-    <html lang="ja">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>介護求人URL無料診断 | 採用Shorts</title>
-      <style>
-:root{--ink:#11181f;--muted:#5b6872;--line:#d8e2e8;--bg:#f7faf8;--panel:#fff;--accent:#12c7a0;--warn:#ffbd3d}
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>介護求人URL無料診断 | 採用の達人</title>
+  <style>
+:root{--ink:#11181f;--muted:#5b6872;--bg:#f7faf8;--surface:#fff;--line:#d8e2e8;--accent:#12c7a0;--deep:#0f5f47;--gold:#ffbd3d;--soft:#eaf7f2;--danger:#b84444}
 *{box-sizing:border-box}
-body{margin:0;background:linear-gradient(90deg,rgba(18,199,160,.08) 1px,transparent 1px),linear-gradient(0deg,rgba(17,24,31,.05) 1px,transparent 1px),var(--bg);background-size:44px 44px;color:var(--ink);font-family:"Yu Gothic","Meiryo",system-ui,sans-serif;line-height:1.75}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-header{background:#11181f;color:#fff;padding:54px 0;border-bottom:6px solid var(--accent)}
-header p{color:#dbe6ec}
-h1{font-size:clamp(35px,6vw,68px);line-height:1.08;margin:0 0 18px;letter-spacing:0}
-h2{font-size:30px;line-height:1.25;margin:0 0 12px;letter-spacing:0}
-h3{font-size:23px;line-height:1.3;margin:0 0 8px;letter-spacing:0}
-p{color:var(--muted);margin:0 0 14px}
-section{padding:30px 0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;box-shadow:0 14px 38px rgba(20,31,27,.07)}
-.btn,button{display:inline-block;border:0;border-radius:8px;padding:15px 20px;font-weight:900;text-decoration:none;margin:8px 10px 0 0;cursor:pointer;font:inherit}
-.primary{background:var(--accent);color:#11181f}.paid{background:var(--warn);color:#11181f}.dark{background:#11181f;color:#fff}
-.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
-.flow div{background:#11181f;color:#fff;border-radius:8px;padding:14px;text-align:center;font-weight:900}
-.badge{display:inline-block;background:#eef6f2;border:1px solid #cfe2dc;border-radius:999px;padding:5px 12px;font-weight:900;color:#16433a;margin:0 6px 8px 0}
-input,textarea,select{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;font:inherit;background:#fff;margin:6px 0 14px}
-label{font-weight:900;color:#24313b}
-.sample{border-left:6px solid var(--accent);padding-left:14px}
-.small{font-size:13px;color:#7a8790}
-video{width:100%;aspect-ratio:9/16;background:#11181f;border-radius:8px}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Yu Gothic","Meiryo",system-ui,sans-serif;line-height:1.75}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.topbar{background:#0f151c;color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:64px}
+.brand{font-weight:800;letter-spacing:0}
+.navlinks{display:flex;align-items:center;gap:18px;font-size:14px}
+.navlinks a{color:#dce7ec;text-decoration:none}
+.navlinks a:hover{color:#fff}
+.hero{background-image:linear-gradient(90deg,rgba(13,20,27,.94),rgba(13,20,27,.76),rgba(13,20,27,.45)),url("video/thumbnail.png");background-size:cover;background-position:center;color:#fff;border-bottom:8px solid var(--accent)}
+.hero .wrap{padding-top:56px;padding-bottom:66px}
+.eyebrow{margin:0 0 14px;color:#cfe8df;font-weight:800}
+h1{font-size:clamp(36px,6.8vw,68px);line-height:1.08;margin:0 0 18px;letter-spacing:0;max-width:940px}
+h1 span,.accent{color:var(--accent)}
+h2{font-size:clamp(25px,4vw,36px);line-height:1.26;margin:0 0 14px;letter-spacing:0}
+h3{font-size:20px;line-height:1.35;margin:0 0 8px;letter-spacing:0}
+p{margin:0 0 14px;color:var(--muted)}
+.hero p{color:#d8e5e9;max-width:760px}
+.lead{font-size:18px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px}
+.btn,button{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;padding:15px 22px;font-weight:800;text-decoration:none;cursor:pointer;font:inherit;min-height:48px}
+.primary{background:var(--accent);color:#101820}.secondary{background:#fff;color:#101820}.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn:hover,button:hover{filter:brightness(.98)}
+.hero-note{font-size:13px;color:#b7c5cb;margin:10px 0 0}
+.band{padding:54px 0;border-bottom:1px solid #e4ebef}
+.band.white{background:#fff}.band.soft{background:#f1f8f5}.band.dark{background:#11181f;color:#fff}
+.band.dark p{color:#d5e0e4}
+.split{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(320px,.96fr);gap:34px;align-items:start}
+.video-frame{max-width:430px;margin:0 auto;background:#0f151c;border-radius:12px;padding:12px;border:1px solid rgba(17,24,31,.18);box-shadow:0 26px 50px rgba(18,31,27,.16)}
+video{display:block;width:100%;aspect-ratio:9/16;background:#11181f;border-radius:8px}
+.small{font-size:13px;color:#76838b}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.step,.item,.deliverable,.faq details{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px}
+.step strong{display:block;font-size:15px;margin-bottom:3px}
+.step .num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:999px;background:var(--accent);color:#11181f;font-weight:800;margin-bottom:10px}
+.output-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.item{border-top:4px solid var(--accent)}
+.item p,.deliverable p{font-size:15px}
+.sample-box{border-left:6px solid var(--accent);background:#fff;padding:20px 22px;margin-top:18px}
+.compare{display:grid;grid-template-columns:1fr 1.25fr;gap:22px;margin-top:22px}
+.before,.after{padding:22px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.before h3{color:#6f7b84}.after{border-left:6px solid var(--accent)}
+.deliverables{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.deliverable ul,.scope-list{margin:10px 0 0;padding:0;list-style:none;color:var(--muted)}
+.deliverable li,.scope-list li{margin:6px 0}
+.deliverable li::before,.scope-list li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:999px;background:var(--accent);margin-right:9px;vertical-align:middle}
+.form-wrap{display:grid;grid-template-columns:minmax(0,.84fr) minmax(360px,1.16fr);gap:32px;align-items:start}
+form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;box-shadow:0 18px 42px rgba(18,31,27,.08)}
+label{display:block;font-weight:800;color:#24313b;margin:14px 0 6px}
+input,textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px 13px;font:inherit;background:#fff;font-size:16px}
+textarea{resize:vertical}
+.check{display:flex;align-items:flex-start;gap:8px;font-weight:600;color:#24313b;margin-top:16px}
+.check input{width:auto;margin-top:7px;accent-color:var(--accent)}
+.submit{width:100%;margin-top:18px}
+.download{margin-top:18px}
 a{color:#245cbd}
-@media(max-width:820px){.grid,.two,.flow{grid-template-columns:1fr}header{padding:44px 0}}
-</style>
-    </head>
-    <body>
-      <header>
-        <div class="wrap">
-          <p><strong>介護求人専門 / 採用Shorts無料診断</strong></p>
-          <h1>介護求人のURLを送るだけで、応募前の不安3つとShorts切り口3本を返します。</h1>
-          <p>求人広告費を増やす前に、未経験者が止まりやすい「初日・教育担当・失敗時フォロー」を確認します。</p>
-          <a class="btn primary" href="#diagnosis-form">求人票URLで無料診断する</a>
-          <a class="btn paid" href="offer/">自社用3本パックを見る</a>
-        </div>
-      </header>
-      <main class="wrap">
-        <section class="two">
-          <div class="card">
-            <h2>30秒サンプル</h2>
+footer{padding:28px 0;color:#6b767e;background:#fff}
+@media(max-width:860px){
+  .topbar .wrap{align-items:flex-start;flex-direction:column;padding-top:14px;padding-bottom:14px}.navlinks{flex-wrap:wrap;gap:12px}
+  .hero .wrap{padding-top:42px;padding-bottom:48px}.cta-row .btn{width:100%}
+  .split,.form-wrap,.compare{grid-template-columns:1fr}.output-list,.deliverables{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
+  .band{padding:38px 0}.video-frame{max-width:360px}h1{font-size:34px}
+}
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="wrap">
+      <div class="brand">採用の達人</div>
+      <div class="navlinks">
+        <a href="#sample">サンプル</a>
+        <a href="#diagnosis">無料診断</a>
+        <a href="offer/">3本パック</a>
+        <a href="#diagnosis-form">フォーム</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">介護求人専門 / 採用Shorts無料診断</p>
+      <h1>応募前に止まる理由を、<br><span>求人票URLから読み解く。</span></h1>
+      <p class="lead">未経験者が感じやすい「初日」「教育担当」「失敗時フォロー」が、求人票のどこで見えにくいのかを診断します。Shorts化できる切り口も3本返します。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#diagnosis-form">求人票URLで無料診断する</a>
+        <a class="btn ghost" href="offer/">3本パックの内容を見る</a>
+      </div>
+      <p class="hero-note">このページでは課金されません。診断結果を見てから、制作に進むか判断できます。</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="band white" id="sample">
+      <div class="wrap split">
+        <div>
+          <h2>30秒の制作サンプル</h2>
+          <p>求人票をもとに、顔出しなしでも伝えられる採用Shortsの例です。候補者が気にする不安を、短い動画の切り口に変換します。</p>
+          <div class="video-frame">
             <video controls playsinline preload="metadata" poster="video/thumbnail.png" src="video/care_recruitment_url_diagnosis.mp4"></video>
           </div>
-          <div class="card">
-            <h2>流れ</h2>
-            <div class="flow"><div>求人URL</div><div>無料診断</div><div>Shorts案3本</div><div>有料生成</div></div>
-            <p>このページでは課金されません。無料診断の内容を見てから、必要な場合だけ制作に進めます。</p>
+          <p class="small">実制作では、求人票・採用ページ・NG表現を確認して構成します。</p>
+        </div>
+        <div>
+          <h2>進め方は4ステップ</h2>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><strong>求人票URLを送る</strong><p>募集職種と困りごとも一緒に送れます。</p></div>
+            <div class="step"><span class="num">2</span><strong>無料診断を受け取る</strong><p>不安3つ、Shorts案3本、改善コピー案を返します。</p></div>
+            <div class="step"><span class="num">3</span><strong>進めるか判断する</strong><p>必要な場合だけ、制作範囲と金額を案内します。</p></div>
+            <div class="step"><span class="num">4</span><strong>Shorts 3本を納品</strong><p>字幕、投稿文、固定コメントまでまとめます。</p></div>
           </div>
-        </section>
-        <section class="grid">
-          <div class="card"><h3>無料で返すもの</h3><p>応募前に残っていそうな不安3つ、Shorts化できる切り口3本、求人票上部の改善案。</p></div>
-          <div class="card"><h3>有料で作るもの</h3><p>9:16採用Shorts 3本、字幕、投稿文、固定コメント、応募前FAQ、簡易計測シート。</p></div>
-          <div class="card"><h3>素材なし対応</h3><p>顔出しなしでも、求人票/採用ページ/抽象UIで初回案を作れます。</p></div>
-        </section>
-        <section class="card">
-          <h2>無料診断の返却サンプル</h2>
-          <div class="sample">
-            <h3>応募前に残っていそうな不安</h3>
-            <p>初日に何をするのか、誰が教えるのか、失敗したときにどうフォローされるのかが見えにくい状態です。</p>
-            <h3>Shorts切り口3本</h3>
-            <p>1. 介護スタッフの初日は何をする？<br>2. 未経験でも大丈夫な理由は「担当者がつくこと」<br>3. いきなり応募が不安な方へ、見学だけでもOK</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band soft" id="diagnosis">
+      <div class="wrap">
+        <h2>無料診断で返すもの</h2>
+        <p>「未経験歓迎」「丁寧に教えます」で止まっている求人票を、候補者の不安から見直します。</p>
+        <div class="output-list">
+          <div class="item"><h3>応募前の不安3つ</h3><p>初日に何をするのか、誰が教えるのか、失敗したときにどうフォローされるのかを確認します。</p></div>
+          <div class="item"><h3>Shorts切り口3本</h3><p>1本ごとに、候補者の不安を減らすテーマへ変換します。</p></div>
+          <div class="item"><h3>求人票上部の改善案</h3><p>応募前に読みたい情報が先に見えるよう、コピーの改善例を出します。</p></div>
+        </div>
+        <div class="sample-box">
+          <h3>返却イメージ</h3>
+          <p>「介護スタッフの初日は何をする？」「未経験でも大丈夫な理由は、担当者がつくこと」「応募前に不安な方へ、見学だけでもOK」など、求人票ごとに個別生成します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band white">
+      <div class="wrap">
+        <h2>求人票のコピーが、どう変わるのか</h2>
+        <div class="compare">
+          <div class="before">
+            <h3>Before</h3>
+            <p>未経験歓迎。丁寧に教えます。</p>
+            <p class="small">候補者が知りたい「初日」「教育」「失敗時」が残ったままです。</p>
           </div>
-        </section>
-        <section class="two">
-          <div class="card"><h2>Before</h2><p>未経験歓迎。丁寧に教えます。</p></div>
-          <div class="card"><h2>After</h2><p>初日は先輩と一緒に、利用者さんの名前、1日の流れ、記録の見方を確認します。最初の2週間は担当者がつき、分からないことはその場で確認できます。</p></div>
-        </section>
-        <section class="card">
-          <h2>制作に進む場合</h2>
-          <span class="badge">9:16動画3本</span><span class="badge">15-30秒目安</span><span class="badge">字幕入り</span><span class="badge">投稿文付き</span><span class="badge">修正1回</span><span class="badge">3営業日目安</span><span class="badge">顔出しなし可</span>
-          <p>金額は無料診断後、制作範囲に合わせて案内します。</p>
-          <p>応募増加や採用成功を保証するものではありません。求人票と応募導線の見え方を改善し、反応を検証するための制作です。</p>
-        </section>
-        <section class="grid">
-          <div class="card"><h3>納品例</h3><p>動画3本、投稿文、固定コメント、応募前FAQ、簡易計測シートをまとめて渡します。</p></div>
-          <div class="card"><h3>よくある質問</h3><p>顔出しなし、素材なし、求人票URLだけの初回診断に対応できます。</p></div>
-          <div class="card"><h3>注意事項</h3><p>応募者の個人情報は送らないでください。施設名やNG表現は公開前に確認します。</p></div>
-        </section>
-        <section class="card" id="diagnosis-form">
-          <h2>求人票URLで無料診断する</h2>
-          <form id="diagnosis-request-form" method="post" action="">
-            <input type="hidden" name="_subject" value="介護求人URL無料診断の新規申込">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_honey" value="">
-            <input type="hidden" name="_replyto" value="">
-            <input type="hidden" name="_next" value="https://kei99-web3.github.io/saiyo-shorts-care-diagnosis/thanks/">
-            <input type="hidden" name="source_url" value="https://kei99-web3.github.io/saiyo-shorts-care-diagnosis/">
-            <label>会社/施設名</label>
-            <input name="company" placeholder="例: 〇〇ケアセンター" required>
-            <label>担当者名</label>
-            <input name="contact_name" placeholder="例: 山田" required>
-            <label>返信先メールアドレス</label>
-            <input type="email" name="email" placeholder="you@example.com" required>
-            <label>募集職種</label>
-            <input name="role" placeholder="例: 介護スタッフ / 訪問介護ヘルパー" required>
-            <label>求人票URL</label>
-            <input name="job_url" placeholder="https://..." required>
-            <label>今困っていること</label>
-            <textarea name="pain" rows="4" placeholder="例: 未経験歓迎で出しているが応募が少ない。見学希望も少ない。"></textarea>
-            <label>
-              <input type="checkbox" name="consent" value="yes" required style="width:auto;margin-right:8px">
-              <a href="privacy/" target="_blank" rel="noopener">個人情報の取り扱い</a>を確認し、無料診断の返信目的で送信内容を利用することに同意します。
-            </label>
-            <button class="primary" type="submit">求人票URLで無料診断する</button>
-          </form>
+          <div class="after">
+            <h3>After</h3>
+            <p>初日は先輩と一緒に、利用者さんの名前、1日の流れ、記録の見方を確認します。最初の2週間は担当者がつき、分からないことはその場で確認できます。</p>
+            <p class="small">応募前に気になる点へ先に答える形にします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band soft">
+      <div class="wrap">
+        <h2>制作に進む場合、提供するもの</h2>
+        <p>無料診断の内容を見て、必要な場合だけ採用Shorts 3本パックへ進めます。金額は診断後の返信で案内します。</p>
+        <div class="deliverables">
+          <div class="deliverable"><h3>動画3本</h3><ul><li>9:16採用Shorts</li><li>各15-30秒目安</li><li>字幕入り</li><li>顔出しなし対応可</li></ul></div>
+          <div class="deliverable"><h3>投稿セット</h3><ul><li>投稿タイトル案</li><li>投稿文</li><li>固定コメント案</li><li>簡易計測メモ</li></ul></div>
+          <div class="deliverable"><h3>応募前フォロー</h3><ul><li>応募前FAQ 5問</li><li>求人票上部の改善コピー 1案</li><li>修正1回</li><li>3営業日目安</li></ul></div>
+        </div>
+        <p class="small">応募増加や採用成功を保証するものではありません。求人票と応募導線の見え方を改善し、反応を検証するための制作です。</p>
+      </div>
+    </section>
+
+    <section class="band white" id="diagnosis-form">
+      <div class="wrap form-wrap">
+        <div>
+          <h2>まずは無料診断から。</h2>
+          <p>求人票URLを送るだけで、応募前の不安とShorts案3本を返します。</p>
+          <ul class="scope-list">
+            <li>応募者個人の情報は不要です</li>
+            <li>このフォームでは課金されません</li>
+            <li>無料診断は、求人票確認後2〜3営業日以内に返信します</li>
+            <li>制作に進む場合だけ、金額と範囲を案内します</li>
+          </ul>
+          <p class="download"><a href="downloads/saiyo_shorts_care_url_diagnosis_kit_v04.zip">自分で確認するための無料診断キットをダウンロード</a></p>
+        </div>
+        <form id="diagnosis-request-form" method="post" action="">
+          <input type="hidden" name="_subject" value="介護求人URL無料診断の新規申込">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_honey" value="">
+          <input type="hidden" name="_replyto" value="">
+          <input type="hidden" name="_next" value="https://kei99-web3.github.io/saiyo-shorts-care-diagnosis/thanks/">
+          <input type="hidden" name="source_url" value="https://kei99-web3.github.io/saiyo-shorts-care-diagnosis/">
+          <label>会社/施設名</label>
+          <input name="company" placeholder="例: 〇〇ケアセンター" required>
+          <label>担当者名</label>
+          <input name="contact_name" placeholder="例: 山田" required>
+          <label>返信先メールアドレス</label>
+          <input type="email" name="email" placeholder="you@example.com" required>
+          <label>募集職種</label>
+          <input name="role" placeholder="例: 介護スタッフ / 訪問介護ヘルパー" required>
+          <label>求人票URL</label>
+          <input name="job_url" placeholder="https://..." required>
+          <label>今困っていること</label>
+          <textarea name="pain" rows="4" required placeholder="例: 未経験歓迎で出しているが応募が少ない。見学希望も少ない。"></textarea>
+          <label class="check">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span><a href="privacy/" target="_blank" rel="noopener">個人情報の取り扱い</a>を確認し、無料診断の返信目的で送信内容を利用することに同意します。</span>
+          </label>
+          <button class="primary submit" type="submit">求人票URLで無料診断する</button>
           <p class="small">送信後、確認画面に移動します。応募者個人の情報や機微情報は入力しないでください。</p>
-          <p><a href="downloads/saiyo_shorts_care_url_diagnosis_kit_v04.zip">自分で確認するための無料診断キットをダウンロード</a></p>
-        </section>
-      </main>
-      <script>
-        (function () {
-          const form = document.getElementById("diagnosis-request-form");
-          if (!form) return;
-          const formKey = "8b078455b82e13c35bd31ed4ca7e0a2f";
-          form.action = "https://formsubmit.co/" + formKey;
-          form.addEventListener("submit", function () {
-            const email = form.querySelector('input[name="email"]');
-            const replyTo = form.querySelector('input[name="_replyto"]');
-            if (email && replyTo) replyTo.value = email.value;
-          });
-        })();
-      </script>
-    </body>
-    </html>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">採用の達人 / 介護求人URL無料診断</div>
+  </footer>
+
+  <script>
+    (function () {
+      const form = document.getElementById("diagnosis-request-form");
+      if (!form) return;
+      const formKey = "8b078455b82e13c35bd31ed4ca7e0a2f";
+      form.action = "https://formsubmit.co/" + formKey;
+      form.addEventListener("submit", function () {
+        const email = form.querySelector('input[name="email"]');
+        const replyTo = form.querySelector('input[name="_replyto"]');
+        if (email && replyTo) replyTo.value = email.value;
+      });
+    })();
+  </script>
+</body>
+</html>
