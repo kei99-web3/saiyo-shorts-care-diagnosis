@@ -1,5 +1,9 @@
 # プロフィールリンク設定
 
+## 設定先チャンネル
+採用の達人
+https://www.youtube.com/channel/UCZsZEnDz74EynyOlqxt1ucQ
+
 ## 表示名
 介護求人URL無料診断
 
