@@ -120,7 +120,7 @@ a{color:#245cbd}
         (function () {
           const form = document.getElementById("diagnosis-request-form");
           if (!form) return;
-          const inbox = ["keitarou.i.99", "gmail.com"].join("@");
+          const inbox = ["senzoku.trainer", "gmail.com"].join("@");
           form.action = "https://formsubmit.co/" + inbox;
           form.addEventListener("submit", function () {
             const email = form.querySelector('input[name="email"]');
